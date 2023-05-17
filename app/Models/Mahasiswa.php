@@ -11,7 +11,7 @@ class Mahasiswa extends Model
 
     protected $table="mahasiswas"; //Eloquent akan membuat model Mahasiswa menyimpan record di table mahasiswas
     public $timestamps=false;
-    protected $primaryKey='Nim'; //Memanggil isi DB dengan primarykey
+    public $primaryKey='Nim'; //Memanggil isi DB dengan primarykey
     public $incrementing = false;
 
     protected $fillable = [
