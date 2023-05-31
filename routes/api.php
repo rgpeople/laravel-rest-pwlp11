@@ -3,6 +3,7 @@
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Route::get('/hello',function(){
 });
 // Route tambahan untuk mahasiswa
 Route::apiResource('/mahasiswa',MahasiswaController::class);
+
+// Route login di api.php
+Route::post('/login',[ApiAuthController::class,'login']);
