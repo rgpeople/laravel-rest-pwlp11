@@ -41,3 +41,6 @@ Route::get('/hello',function(){
 
 // Route login di api.php
 Route::post('/login',[ApiAuthController::class,'login']);
+
+// Route regsiter di api.php
+Route::post('/register',[ApiAuthController::class,'register']);
